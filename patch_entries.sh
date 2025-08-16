@@ -6,8 +6,8 @@ sudo sed -i 's/onstr="$(gettext_printf "(on %s)" "${DEVICE}")"/onstr=""/g' /etc/
 # Use short name for os-prober entries ("Windows" instead of "Windows Boot Manager")
 sudo sed -i 's/LONGNAME="`echo ${OS} | cut -d '"'"':'"'"' -f 2 | tr '"'"'^'"'"' '"'"' '"'"'`"/LONGNAME="`echo ${OS} | cut -d '"'"':'"'"' -f 3 | tr '"'"'^'"'"' '"'"' '"'"'`"/g' /etc/grub.d/30_os-prober
 
-# Move os-prober entries before Linux
-sudo mv /etc/grub.d/30_os-prober /etc/grub.d/05_os-prober
+# Move Linux entries before os-prober
+sudo mv /etc/grub.d/05_os-prober /etc/grub.d/30_os-prober
 
 # Add icon to "Advanced options"
 # Change "Advanced options for OS" to "OS Options"
