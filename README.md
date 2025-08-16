@@ -16,9 +16,9 @@ A clean, monochromatic GRUB theme inspired by **Marin Kitagawa** from *Sono Bisq
 ## Installation
 
 ```bash
-git clone https://github.com/yorunohikari/MangaMarin && cd MangaMarin && ./install.sh | bash
+git clone https://github.com/yorunohikari/MangaMarin && cd MangaMarin && ./install.sh
 ```
-
+>  (If install.sh is not executable, run: chmod +x install.sh)
 ---
 
 ### Manual installation
